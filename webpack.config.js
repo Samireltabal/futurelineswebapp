@@ -21,6 +21,11 @@ module.exports = {
      new HtmlWebpackPlugin({
         title: 'Development',
      }),
+     new HtmlWebpackPlugin({
+      filename: 'teacher.html',
+      title: 'Custom template using Handlebars',
+      template: './src/pages/teacher.html'
+    })
    ],
   module: {
     rules: [
