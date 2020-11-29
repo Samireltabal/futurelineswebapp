@@ -1,1 +1,19 @@
 @import "~bootstrap/scss/bootstrap";
+body {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  color: #2c3e50;
+}
+.a {
+  height: 200px;
+  background-color: #2980b9;
+}
+
+.b {
+  height: 200px;
+  background-color: #e74c3c;
+}
+
+.c {
+  height: 200px;
+  background-color: #d35400;
+}

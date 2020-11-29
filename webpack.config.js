@@ -5,7 +5,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    teacher: './src/js/teacher.js',
   },
   output: {
     filename: '[name].bundle.js',
@@ -17,15 +18,15 @@ module.exports = {
     contentBase: './dist',
   },
   plugins: [
-    new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
-     new HtmlWebpackPlugin({
-        title: 'Development',
-     }),
-     new HtmlWebpackPlugin({
-      filename: 'teacher.html',
-      title: 'Custom template using Handlebars',
-      template: './src/pages/teacher.html'
-    })
+    // new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
+    //  new HtmlWebpackPlugin({
+    //     title: 'Development',
+    //  }),
+    //  new HtmlWebpackPlugin({
+    //   filename: 'teacher.html',
+    //   title: 'Custom template using Handlebars',
+    //   template: './src/pages/teacher.html'
+    // })
    ],
   module: {
     rules: [

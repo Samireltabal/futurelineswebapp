@@ -26,4 +26,8 @@ function component() {
   return element;
 }
 
-document.body.appendChild(component());
+function brandClick(e) {
+  e.preventDefault()
+  window.alert('brand clicked')
+}
+// document.body.appendChild(component());
